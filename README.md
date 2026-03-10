@@ -21,7 +21,7 @@ dbt Marts (Star Schema — Dims & Facts)
     ↓
 Streamlit Web App (4 interactive pages)
     ↑
-Airflow DAG (orchestrates everything weekly)
+Airflow DAG (orchestrates everything daily)
     ↑
 Monitoring (data quality checks & logging)
 ```
