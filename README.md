@@ -6,7 +6,7 @@ A production-style end-to-end data engineering project built using the **Olympic
 
 ## Project Overview
 
-This project ingests historical Olympic athlete data, transforms it into a star schema data warehouse, and serves it through an interactive web application. The entire pipeline is orchestrated by Apache Airflow and runs automatically on a weekly schedule.
+This project ingests historical Olympic athlete data, transforms it into a star schema data warehouse, and serves it through an interactive web application. The entire pipeline is orchestrated by Apache Airflow and runs automatically on a daily schedule.
 
 ```
 CSV Dataset
