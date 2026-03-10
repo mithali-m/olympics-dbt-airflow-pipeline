@@ -17,7 +17,7 @@ with DAG(
     description="Olympic ETL Pipeline — Ingest → dbt → Monitor",
     default_args=default_args,
     start_date=datetime(2024, 1, 1),
-    schedule_interval="@weekly",
+    schedule_interval="@daily",
     catchup=False,
     tags=["olympic", "etl"],
 ) as dag:
