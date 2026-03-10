@@ -1,0 +1,11 @@
+WITH stg AS (
+    SELECT * FROM {{ ref('stg_athlete_events') }}
+)
+
+SELECT DISTINCT
+    MD5(CONCAT(YEAR::VARCHAR, '|', HOST_CITY))  AS HOST_SK,
+    YEAR,
+    HOST_CITY
+FROM stg
+WHERE YEAR IS NOT NULL
+  AND HOST_CITY IS NOT NULL

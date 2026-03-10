@@ -1,0 +1,13 @@
+WITH stg AS (
+    SELECT * FROM {{ ref('stg_athlete_events') }}
+)
+
+SELECT DISTINCT
+    MD5(ATHLETE_ID)         AS ATHLETE_SK,
+    ATHLETE_ID,
+    ATHLETE_NAME,
+    GENDER,
+    DATE_OF_BIRTH,
+    IS_RECORD_HOLDER
+FROM stg
+WHERE ATHLETE_ID IS NOT NULL

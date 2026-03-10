@@ -1,0 +1,13 @@
+olympic_dbt:
+  outputs:
+    dev:
+      account: ZDWDEFK-YE62329
+      database: OLYMPICS_DB
+      password: 66#Notsosaintneu
+      role: ACCOUNTADMIN
+      schema: ANALYTICS
+      threads: 1
+      type: snowflake
+      user: MITHALIM
+      warehouse: COMPUTE_WH
+  target: dev

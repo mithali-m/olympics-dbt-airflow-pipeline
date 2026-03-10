@@ -1,0 +1,19 @@
+# Credentials - never upload
+config/.env
+orchestration/.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# dbt
+olympic_dbt/target/
+olympic_dbt/logs/
+
+# Data files (too large for GitHub)
+data/
+
+# Airflow logs
+orchestration/logs/
